@@ -26,7 +26,7 @@ factory('ioSocketFactory', function (socketFactory, $timeout) {
     // initialize socketFactory
     var socket = socketFactory(opts);
     // expose socket's socket object
-    socket.socket = opts.ioSocket.socket;
+    socket.socket = opts.ioSocket;
 
     return socket;
   };
